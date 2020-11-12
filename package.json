@@ -1,0 +1,25 @@
+{
+  "name": "soundclout-relational-info",
+  "version": "1.0.0",
+  "description": "This repo contains relational information regarding our mock SoundCloud app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeGattis/soundclout-relational_info-service.git"
+  },
+  "author": "Mike Gattis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeGattis/soundclout-relational_info-service/issues"
+  },
+  "homepage": "https://github.com/MikeGattis/soundclout-relational_info-service#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.2.0"
+  }
+}
