@@ -14,7 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Users.init({
-    user: DataTypes.STRING
+    user: DataTypes.STRING,
+    user_image_url: DataTypes.STRING,
+    like: DataTypes.BOOLEAN,
+    repost: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'Users',
