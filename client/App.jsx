@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import RelatedTracks from './RelatedTracks.jsx';
+import Likes from './Likes.jsx';
+import Reposts from './Reposts.jsx';
 
 // COMPONENTS:
 
@@ -18,6 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <h1>Relational Information</h1>
+
     );
   }
 }
