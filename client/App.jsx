@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 // COMPONENTS:
 
@@ -23,5 +24,5 @@ class App extends React.Component {
 
 export default App;
 
-const wrapper = document.getElementById("container");
-wrapper ? ReactDOM.render(<Form />, wrapper) : false;
+const wrapper = document.getElementById("app");
+wrapper ? ReactDOM.render(<App />, wrapper) : false;
