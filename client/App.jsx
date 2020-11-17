@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import RelatedTracks from './RelatedTracks.jsx';
 import LikesReposts from './LikesReposts.jsx';
-// import Reposts from './Reposts.jsx';
 import axios from 'axios';
 
 class App extends React.Component {

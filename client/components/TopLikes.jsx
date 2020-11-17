@@ -11,7 +11,7 @@ function TopLikes(props) {
     }
     topNine.push(
       <div>
-        <div>{user.user_image_url}</div>
+        <img src={user.user_image_url} />
         <div>{user.user}</div>
       </div>
     );

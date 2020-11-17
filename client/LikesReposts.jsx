@@ -71,6 +71,7 @@ class LikesReposts extends React.Component {
     return (
       <div>
         <TopLikes users={this.state.likers} />
+        <h3>Reposts</h3>
         <TopReposts users={this.state.reposters} />
       </div>
     )
