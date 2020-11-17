@@ -20,7 +20,7 @@ app.get('/api/songs', function(req, res) {
   })
   .then(data => {
     res.status(200);
-    res.send(data);
+    res.json(data);
   })
   .catch(error => {
     res.status(404);
