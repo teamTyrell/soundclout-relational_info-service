@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 
-LikesModal = function(props) {
+// LikesModal = function(props) {
 
-}
+// }
 
 
-export default LikesModal;
+// export default LikesModal;

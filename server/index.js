@@ -14,9 +14,9 @@ app.get('/api/songs', function(req, res) {
     },
     //parameter: genre to match all songs of a similar genre (currently compass directions as placeholder)
     //to be fixed at a later date
-    where: {
-      genre: 'north'
-    }
+    // where: {
+    //   genre: 'north'
+    // }
   })
   .then(data => {
     res.status(200);

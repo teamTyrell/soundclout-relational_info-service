@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 
-RepostsModal = function(props) {
+// RepostsModal = function(props) {
 
-}
+// }
 
-export default RepostsModal;
+// export default RepostsModal;

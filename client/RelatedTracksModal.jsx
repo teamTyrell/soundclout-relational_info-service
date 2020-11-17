@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 
-RelatedTracksModal = function(props) {
+// RelatedTracksModal = function(props) {
+//   return (
+//     <div>hello</div>
+//   )
+// }
 
-};
-
-export default RelatedTracksModal;
+// export default RelatedTracksModal

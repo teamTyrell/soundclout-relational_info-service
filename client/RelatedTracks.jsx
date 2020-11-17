@@ -11,6 +11,11 @@ class RelatedTracks extends React.Component {
     // bind functions here:
 
   }
+  render() {
+    return (
+      <div>hello</div>
+    )
+  }
 }
 
 export default RelatedTracks;

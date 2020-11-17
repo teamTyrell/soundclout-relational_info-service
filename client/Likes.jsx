@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Likes from './Likes.jsx';
+import LikesModal from './LikesModal.jsx';
 
 class Likes extends React.Component {
   constructor(props) {
@@ -10,6 +10,12 @@ class Likes extends React.Component {
     }
     // bind functions here:
 
+  }
+
+  render() {
+    return (
+      <div>hello</div>
+    )
   }
 }
 
