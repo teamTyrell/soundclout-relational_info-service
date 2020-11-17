@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import RelatedTracksModal from './RelatedTracksModal.jsx';
-import HighlightedTracks from './HighlightedTracks.jsx';
+import RelatedTracksModal from './modals/RelatedTracksModal.jsx';
+import HighlightedTracks from './components/HighlightedTracks.jsx';
 
 class RelatedTracks extends React.Component {
   constructor(props) {
