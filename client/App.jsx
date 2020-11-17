@@ -5,8 +5,6 @@ import Likes from './Likes.jsx';
 import Reposts from './Reposts.jsx';
 import axios from 'axios';
 
-// COMPONENTS:
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -15,40 +13,32 @@ class App extends React.Component {
       songs: [],
       users: []
     };
-    // bind functions here:
-    this.getSongs = this.getSongs.bind(this);
 
+    this.getUsers = this.getUsers.bind(this);
   }
 
   componentDidMount() {
-    this.getSongs();
+
+    this.getUsers();
   }
 
-  // get all songs
-  getSongs() {
-    axios.get('/api/songs')
+
+
+  getUsers() {
+    axios.get('/api/users')
     .then(res => {
-      // if (error) {
-      //   console.log(res.data);
-      //   throw error;
-      // }
-      // this.setState({songs: res.data});
-      console.log(res)
+      this.setState({users: res.data});
     })
-    // .catch(error => {
-    //   console.log(error)
-    //   console.error('issue in App.jsx retrieving song data from DB');
-    // });
+    .catch(error => {
+      console.error('issue in App.jsx retrieving song data from DB');
+    });
   }
-
-  // get all users
-
 
   render() {
     return (
       <div>
         <h1>Relational Information</h1>
-        <RelatedTracks songs={this.state.songs} />
+        <RelatedTracks />
         <Likes users={this.state.users} />
         <Reposts users={this.state.users} />
       </div>
