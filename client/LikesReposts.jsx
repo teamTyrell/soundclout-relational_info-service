@@ -30,7 +30,6 @@ class LikesReposts extends React.Component {
       return res;
     })
     .then(res => {
-      console.log(this.state.users);
       this.findLikers();
       this.findReposters();
       return res;
@@ -60,7 +59,7 @@ class LikesReposts extends React.Component {
     var reposts = [];
     for (var i = 0; i < allUsers.length; i++) {
       var user = allUsers[i];
-      if (user.like) {
+      if (user.repost) {
         reposts.push(user);
       }
     }
@@ -70,6 +69,7 @@ class LikesReposts extends React.Component {
   render() {
     return (
       <div>
+        <h3>Likes</h3>
         <TopLikes users={this.state.likers} />
         <h3>Reposts</h3>
         <TopReposts users={this.state.reposters} />

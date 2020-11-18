@@ -15,7 +15,6 @@ class App extends React.Component {
         <h1>Relational Information</h1>
         <h3>Related Tracks</h3>
         <RelatedTracks />
-        <h3>Likes</h3>
         <LikesReposts />
       </div>
     );

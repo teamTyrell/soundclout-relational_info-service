@@ -11,12 +11,7 @@ app.get('/api/songs', function(req, res) {
   db.Songs.findAll({
     attributes: {
       exclude: ['createdAt', 'updatedAt']
-    },
-    //parameter: genre to match all songs of a similar genre (currently compass directions as placeholder)
-    //to be fixed at a later date
-    // where: {
-    //   genre: 'north'
-    // }
+    }
   })
   .then(data => {
     res.status(200);
@@ -30,7 +25,6 @@ app.get('/api/songs', function(req, res) {
 
 
 app.get('/api/users', function(req, res) {
-  // parameters: either 'like' or 'repost' to be updated later or on client side as needed
   db.Users.findAll({
     attributes: {
       exclude: ['createdAt', 'updatedAt']

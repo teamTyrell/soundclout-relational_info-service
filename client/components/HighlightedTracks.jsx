@@ -7,14 +7,17 @@ function HighlightedTracks(props) {
   for (var i = 0; i < highlights.length; i++) {
     var song = highlights[i];
     topThree.push(
-      <div>
-        <div>{song.artist_image_url}</div>
-        <div>{song.title}</div>
-        <div>{song.artist}</div>
-        <div>{song.plays}</div>
-        <div>{song.likes}</div>
-        <div>{song.reposts}</div>
-        <div>{song.comments}</div>
+      <div className={"songGrid"}>
+        <img src={"https://fec-tyrell-users.s3.us-east-2.amazonaws.com/Snapchat-7841306265423801048.jpg"}
+          className={"songImg"} />
+          {/* {song.artist_image_url} */}
+
+        <div className={"songTitle"}>{song.title}</div>
+        <div className={"artist"}>{song.artist}</div>
+        <div className={"statsPlays"}>{song.plays}</div>
+        <div className={"statsLikes"}>{song.likes}</div>
+        <div className={"statsReposts"}>{song.reposts}</div>
+        <div className={"statsComments"}>{song.comments}</div>
       </div>
     )
   }
