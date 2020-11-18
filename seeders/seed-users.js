@@ -1,10 +1,18 @@
 'use strict';
 const faker = require('faker');
+const images = require('../database/user-images.js');
+
+var generateRandomImage = function(data) {
+  var imageArray = data.images;
+  var max = imageArray.length;
+  var randomNum = Math.floor(Math.random() * Math.floor(max));
+  return imageArray[randomNum];
+};
 
 const users = [...Array(100)].map((user) => (
   {
     user: faker.internet.userName(),
-    // user_image_url: faker.internet.avatar() ???
+    user_image_url: generateRandomImage(images),
     like: faker.random.boolean(),
     repost: faker.random.boolean()
   }
